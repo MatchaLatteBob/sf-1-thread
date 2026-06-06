@@ -6,11 +6,11 @@ engines:
     name: "ShashChess39"                     # Binary name of the engine to use.
     ponder: true                          # Think on opponent's time.
     silence_stderr: false                 # Suppresses stderr output.
-    move_overhead_multiplier: 22.5        # Optimized for bullet games.
+    move_overhead_multiplier: 2.5        # Optimized for bullet games.
     uci_options:                          # Arbitrary UCI options passed to the engine.
-      Threads: 8                          # Increased threads for Threadripper power.
-      Hash: 5800                           # Increased hash for better position evaluation.
-      Move Overhead: 100                  # Reduced for faster bullet moves.
+      Threads: 1                          # Increased threads for Threadripper power.
+      Hash: 800                           # Increased hash for better position evaluation.
+      Move Overhead: 250                  # Reduced for faster bullet moves.
     limits:                               # Limits that end the move calculation early.
    #   depth: 28                          # Maximum search depth for bullet.
 
@@ -20,11 +20,11 @@ engines:
     name: "ShashChess39"                     # Binary name of the engine to use.
     ponder: true                          # Think on opponent's time.
     silence_stderr: false                 # Suppresses stderr output.
-    move_overhead_multiplier: 23.0         # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+    move_overhead_multiplier: 3.0         # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
     uci_options:                          # Arbitrary UCI options passed to the engine.
-      Threads: 8                          # Maximum Threadripper power for longer games.
-      Hash: 8192                           # Massive hash for deep calculation.
-      Move Overhead: 100                  # Increase if your bot flags games too often.
+      Threads: 1                          # Maximum Threadripper power for longer games.
+      Hash: 800                          # Massive hash for deep calculation.
+      Move Overhead: 350                  # Increase if your bot flags games too often.
     limits:    
   #    depth: 35                           # Deep search for standard games.
   #    nodes: 8000000                      # High node count for thorough analysis.
