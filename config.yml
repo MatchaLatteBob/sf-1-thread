@@ -6,11 +6,11 @@ engines:
     name: "ShashChess39"                     # Binary name of the engine to use.
     ponder: true                          # Think on opponent's time.
     silence_stderr: false                 # Suppresses stderr output.
-    move_overhead_multiplier: 2.5        # Optimized for bullet games.
+    move_overhead_multiplier: 2.2        # Optimized for bullet games.
     uci_options:                          # Arbitrary UCI options passed to the engine.
       Threads: 4                          # Increased threads for Threadripper power.
       Hash: 2048                           # Increased hash for better position evaluation.
-      Move Overhead: 350                  # Reduced for faster bullet moves.
+      Move Overhead: 250                  # Reduced for faster bullet moves.
     limits:                               # Limits that end the move calculation early.
    #   depth: 28                          # Maximum search depth for bullet.
 
